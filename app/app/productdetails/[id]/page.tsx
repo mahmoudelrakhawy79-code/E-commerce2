@@ -1,6 +1,6 @@
 import { getsingleproduct } from '@/api/services/productapi'
 import Slider from '@/app/-componants/slidder/slider';
-import Addbtn from '@/app/ِAddbtn/addbtn';
+import Addbtn from '@/app/Addbtn/addbtn';
 import Image from 'next/image'
 
 export default async function Productdetails({ params }: { params: Promise<{ id: string }> }) {

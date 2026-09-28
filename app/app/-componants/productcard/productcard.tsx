@@ -2,7 +2,7 @@ import React from 'react'
 import { ProductType } from '@/api/types/typeproduct'
 import Image from 'next/image'
 import Link from 'next/link'
-import Addbtn from '@/app/ِAddbtn/addbtn'
+import Addbtn from '@/app/Addbtn/addbtn'
 import Addwish from '@/app/addwish/addwish'
 
 export default function Productcard({ product }: { product: ProductType }) {

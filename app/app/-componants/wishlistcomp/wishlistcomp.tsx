@@ -1,6 +1,6 @@
 'use client'
 import { deletewishitem } from '@/api/services/deletewishlist';
-import Addbtn from '@/app/ِAddbtn/addbtn';
+import Addbtn from '@/app/Addbtn/addbtn';
 import { toast } from '@/components/ui/toast';
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query'
 import Link from 'next/link';
