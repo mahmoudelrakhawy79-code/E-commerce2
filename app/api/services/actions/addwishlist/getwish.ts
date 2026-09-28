@@ -2,7 +2,8 @@
 
 import { gettokendata } from "@/utilities/gettokendata"
 export async function getwish() {
-    const token = await gettokendata();
+    const tokenData = await gettokendata();
+    const token = typeof tokenData === 'string' ? tokenData : (tokenData as any)?.token;
     console.log("Retreived Token:", token);
 
     if (!token) {

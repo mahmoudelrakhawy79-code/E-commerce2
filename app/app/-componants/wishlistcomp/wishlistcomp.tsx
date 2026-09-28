@@ -58,7 +58,7 @@ export default function Wishlistcomp() {
                                 </tr>
                             </thead>
                             <tbody>
-                                {wishlistdata?.data.map((product) => {
+                                {wishlistdata?.data.map((product: any) => {
                                     return <tr key={product._id} className="text-center">
                                         <td className="px-2 py-2 text-left align-top">
                                             <img src={product.imageCover} alt="test" className="w-[100px] mr-2 inline-block h-[100px]" /><span>Green Capsicum</span>

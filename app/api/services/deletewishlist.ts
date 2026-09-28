@@ -5,7 +5,8 @@ import { gettokendata } from "@/utilities/gettokendata"
 
 
 export async function deletewishitem(prodid: string) {
-    const token = await gettokendata();
+    const tokenData = await gettokendata();
+    const token = typeof tokenData === 'string' ? tokenData : (tokenData as any)?.token;
     if (!token) {
         throw new Error('User is not authenticated');
     }

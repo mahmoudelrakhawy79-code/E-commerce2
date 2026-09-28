@@ -1,7 +1,8 @@
+import { Brand } from '@/api/types/typeproduct'
 import Link from 'next/link'
 import React from 'react'
 
-export default function Brandcard({ brand }) {
+export default function Brandcard({ brand }: { brand: Brand }) {
 
     return (
         <>
